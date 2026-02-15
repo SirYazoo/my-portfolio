@@ -1,16 +1,29 @@
-# React + Vite
+# Rio Aurelio | Full-stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance personal portfolio built with **React**, **Tailwind CSS v4**, and **Vite**. This project showcases my expertise in backend architecture and full-stack development.
 
-Currently, two official plugins are available:
+**Live Demo:** [rioaurelio.vercel.app](https://rioaurelio.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Key Features
 
-## React Compiler
+- **Responsive Architecture**: Fully optimized for mobile, tablet, and desktop viewing.
+- **Modern Styling**: Built using Tailwind CSS v4, utilizing the new CSS-first configuration.
+- **Developer-Centric UI**: Minimalist design focused on readability and professional hierarchy.
+- **Optimized Performance**: Scaffolded with Vite for near-instant load times and efficient bundling.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technical Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React.js, Tailwind CSS v4, Lucide React (Icons)
+- **Build Tool**: Vite
+- **Deployment**: Vercel
+- **Version Control**: Git / GitHub (Managed via NVM for Node stability)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+```text
+src/
+├── assets/      # Static assets and images
+├── components/  # Modular UI components
+├── App.jsx      # Main application logic and routing
+└── index.css    # Global styles and Tailwind directives
+```
