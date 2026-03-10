@@ -1,22 +1,13 @@
-import React from "react";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  Code2,
-  Database,
-  Server,
-  ExternalLink,
-} from "lucide-react";
+import { Code2, Database, ExternalLink, Mail, Server } from "lucide-react";
 
 const App = () => {
   const projects = [
     {
-      title: "Scalable API Gateway",
+      title: "Task Manager REST API",
       role: "Backend Developer",
-      desc: "Architected a high-throughput RESTful API. Implemented JWT authentication and optimized middleware for secure, sub-100ms request handling.",
-      tech: ["Node.js", "Express", "PostgreSQL", "JWT"],
-      link: "https://github.com/SirYazoo",
+      desc: "Built a secure, serverless REST API with stateless JWT authentication. Implemented custom middleware for data validation and raw parameterized SQL queries to prevent injection attacks.",
+      tech: ["Node.js", "Express", "PostgreSQL", "Vercel"],
+      link: "https://github.com/SirYazoo/task-manager-api",
     },
     {
       title: "Inventory Management System",
@@ -72,7 +63,7 @@ const App = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
             </span>
-            OPEN FOR OPPORTUNITIES
+            <span>OPEN FOR OPPORTUNITIES</span>
           </div>
 
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[0.85] text-white">
@@ -99,7 +90,19 @@ const App = () => {
                 href="https://github.com/SirYazoo"
                 className="p-3 bg-slate-900 text-slate-400 border border-slate-800 rounded-full hover:bg-amber-500 transition"
               >
-                <Github size={20} />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.02c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A4.8 4.8 0 0 0 8 18v4"></path>
+                </svg>
               </a>
               <a
                 target="_blank"
@@ -107,7 +110,21 @@ const App = () => {
                 href="https://linkedin.com/in/rio-aurelio-sumantri"
                 className="p-3 bg-slate-900 text-slate-400 border border-slate-800 rounded-full hover:bg-amber-500 transition"
               >
-                <Linkedin size={20} />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
               </a>
             </div>
           </div>
@@ -179,9 +196,9 @@ const App = () => {
             Featured Work
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {projects.map((proj, i) => (
+            {projects.map((proj) => (
               <div
-                key={i}
+                key={proj.title}
                 className="group p-8 bg-[#0d1629] border border-slate-800 rounded-3xl hover:border-amber-500/30 hover:shadow-2xl hover:shadow-amber-500/5 transition-all duration-500"
               >
                 <div className="flex justify-between items-start mb-6">
@@ -204,9 +221,9 @@ const App = () => {
                   {proj.desc}
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  {proj.tech.map((t, idx) => (
+                  {proj.tech.map((t) => (
                     <span
-                      key={idx}
+                      key={t}
                       className="px-3 py-1 bg-slate-900 text-amber-500 text-[10px] font-bold rounded-full uppercase tracking-tighter border border-slate-800"
                     >
                       {t}
