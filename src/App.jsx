@@ -16,6 +16,13 @@ const App = () => {
       tech: ["Node.js", "Express", "MySQL", "Multer", "Nodemailer"],
       link: "https://github.com/SirYazoo/advanced-movie-api",
     },
+    {
+      title: "URL Shortener API",
+      role: "Backend Developer",
+      desc: "A production-ready URL shortening microservice featuring custom aliasing, atomic click tracking, and built-in rate limiting for enhanced security.",
+      tech: ["Node.js", "Express", "Prisma", "PostgreSQL"],
+      link: "https://github.com/SirYazoo/url-shortener-api",
+    },
   ];
 
   return (
@@ -43,7 +50,7 @@ const App = () => {
               href="#projects"
               className="text-slate-400 hover:text-amber-500 transition duration-300"
             >
-              Work
+              Works
             </a>
             <a
               href="mailto:rioaurelio259@gmail.com"
@@ -179,7 +186,8 @@ const App = () => {
                 for scalability.
               </p>
               <div className="flex flex-wrap gap-2 text-[10px] font-black uppercase text-amber-500">
-                <span>MySQL</span> • <span>PostgreSQL</span>
+                <span>MySQL</span> • <span>PostgreSQL</span> •{" "}
+                <span>Prisma</span>
               </div>
             </div>
             <div className="p-8 rounded-3xl bg-slate-900/50 border border-slate-800 hover:bg-amber-500/50 transition duration-300">
@@ -206,7 +214,7 @@ const App = () => {
       <section id="projects" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-black tracking-tight mb-16 text-white">
-            Featured Work
+            Featured Works
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((proj) => (
